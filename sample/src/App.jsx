@@ -1,20 +1,16 @@
-import Header from "./header.jsx";
-import Footer from "./footer.jsx";
-import Body from "./body.jsx";
-import Posts from "./posts.jsx";
+import "./index.css";
+import DisplayTask from "./tasks";
+import TodoForm from "./todo-form";
 
-function App(){
-  const sample_data = 'shark logo';
-
+function App (){
   return(
-    <div>
-      <Header logo={sample_data} />
-      <div className="hero">hero</div>
-      <Body />
-      <Posts />
-      <Footer />
+    <div className = "container">
+        <h1 className="heading">Tasks For Today...</h1>
+        <p className="author">sagittaerys_</p>
+        <TodoForm />
+        <DisplayTask />
     </div>
   );
 }
 
-export default App;
+export default App;

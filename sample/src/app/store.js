@@ -1,11 +1,8 @@
-import { configureStore } from '@reduxjs/toolkit';
-import UserReducer from '../features/user/userSlice';
+import { configureStore } from '@reduxjs/toolkit'
+import TaskReducer from '../features/task/taskSlice'
 
-// temporary database managed by redux
 export const store = configureStore({
   reducer: {
-    users: UserReducer,
-    posts: [],
-    comments: []
+    tasks: TaskReducer
   },
-});
+})

@@ -3,22 +3,49 @@
     padding: 0;
     box-sizing: border-box;
 }
-header{
-    height: 60px;
-    background-color: navy;
-    color: white;
+body{
+  background-color: black;
+  color: gold;
+  padding: 40px 0;
+}
+.container{
+    max-width: 500px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 600px) {
+    .container{
+        width: 80%;
+    }
+}
+.heading{
+    text-align: center;
+}
+#addTask{
+    background-color: crimson;
+    border: none;
+    color: ivory;
+    padding: 7px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.todo-input{
+    margin-bottom: 40px;
+}
+#addTask:hover{
+    background-color: gold;
+    color: crimson;
+}
+.input-todo{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 40px;
+    flex-direction: column;
+    gap: 10px;
 }
-a{
-    color: white;
-    text-decoration: none;
-    text-transform: capitalize;
+input{
+    width: 100%;
+    padding: 7px;
 }
-ul{
-    display: flex;
-    gap: 20px;
-    list-style: none;
+.author{
+    text-align: center;
+    margin: 10px 0;
 }
+  
